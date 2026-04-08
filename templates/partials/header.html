@@ -1,0 +1,11 @@
+<header>
+    <form method="post" action="{% url 'set_language' %}">
+        {% csrf_token %}
+        <label for="language-select">Choose your language:</label>
+        <select id="language-select" name="language">
+            <option value="en">English</option>
+            <option value="ru">Russian</option>
+        </select>
+        <button type="submit">Switch</button>
+    </form>
+</header>
