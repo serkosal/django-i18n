@@ -6,7 +6,7 @@ django i18n &amp; l11n ex6nts
     which by convension often imported as `_`.
 3.  create translation files using `makemessages` `manage.py` command.
     ```sh
-    python manage.py makemessages -a
+    python manage.py makemessages -l ru -l en
     ```
 4.  edit .po files
 5.  ```sh

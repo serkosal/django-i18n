@@ -3,7 +3,9 @@
 <header>
     <form method="post" action="{% url 'set_language' %}">
         {% csrf_token %}
-        <label for="language-select">Choose your language:</label>
+        <label for="language-select">
+            {% translate "Choose your language" %}
+        </label>
         <select id="language-select" name="language">
             {% get_available_languages as LANGUAGES %}
             {% get_current_language as current_language %}
@@ -17,6 +19,8 @@
                 </option>
             {% endfor %}
         </select>
-        <button type="submit">Switch</button>
+        <button type="submit">
+            {% translate "Switch" %}
+        </button>
     </form>
 </header>

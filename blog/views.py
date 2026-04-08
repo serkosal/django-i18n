@@ -11,4 +11,4 @@ def index(req: HttpRequest):
         'title': _('Main page')
     }
     
-    return render(req, 'base.html', context=context)
+    return render(req, 'django_proj/base.html', context=context)

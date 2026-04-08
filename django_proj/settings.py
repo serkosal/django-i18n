@@ -58,7 +58,7 @@ TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [
-            BASE_DIR / 'templates',
+            BASE_DIR / 'django_proj' / 'templates',
         ],
         "APP_DIRS": True,
         "OPTIONS": {
@@ -112,6 +112,9 @@ LANGUAGES = (
     ('en', 'English'),
     ('ru', 'Русский')
 )
+LOCALE_PATHS = [
+    BASE_DIR / "django_proj/locale",
+]
 
 TIME_ZONE = "UTC"
 
